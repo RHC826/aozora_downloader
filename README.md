@@ -26,5 +26,5 @@ $ ./aozora_downloader.bash titles.txt
 
 titles.txt は作品のタイトルと URL からなる CSV。
 
-これで作品名.txt と言うファイルがディレクトリにできます。
+これで作品名.txt という名前のファイルがディレクトリにできます。
 
