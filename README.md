@@ -1,5 +1,11 @@
 # 青空文庫の書籍をダウンロードするシェルスクリプトを書いた
 
+このプログラムは青空文庫から比較的少数のファイルをダウンロードすることを前提にしています。
+
+青空文庫の全ての作品をダウンロードしたいなどの場合は、github にデータがアップロードされているのでそちらを使ってください。
+
+[GitHub - aozorahack/aozorabunko_text: text-only archives of www.aozora.gr.jp](https://github.com/aozorahack/aozorabunko_text)
+
 ## やりたいこと
 
 それなりの頻度で日本語の例文が欲しくなるときがある。適当にでっち上げても良いのだが、どうせなら実際に使われているものが良い。
