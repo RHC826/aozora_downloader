@@ -8,14 +8,14 @@ for line in $(cat $1); do
 # 配列から各要素を取り出す
     author="${parts[1]}"
     title="${parts[2]}"
-    url="${parts[0]}"
+    url=${parts[0]}
 
 # 各変数の値を表示
     echo "著者: $author"
     echo "タイトル: $title"
     echo "URL: $url"
 
-    bash downloader.bash $url
+    bash fetch_file.bash $url
     mv output.txt $title.txt
     sleep 3
 

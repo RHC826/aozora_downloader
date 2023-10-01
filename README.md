@@ -46,8 +46,8 @@ titles.txt は著者名・作品名・URL を列挙したテキストファイ�
 ```javascript
 [...document.querySelectorAll('a')]
     .filter(e => e.href.includes("file"))
-    .map(e => {const tmp = `"${(e.textContent).replace(/aozora.*/,"").replace(" ",'" "')}"`.split(" ");
-                   return [`"${e.href}"`, `${tmp[0]}`,`${tmp[1]}` ]
+    .map(e => {const tmp = `${(e.textContent).replace(/aozora.*/,"").replace(" ",' ')}`.split(" ");
+                   return [`${e.href}`, `${tmp[0]}`,`${tmp[1]}` ]
               })
     .map(e => `${e[0]},${e[1].replace(/ /g,"_")},${e[2]}`)
     .join("\n")
