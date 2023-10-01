@@ -6,9 +6,9 @@ for line in $(cat $1); do
     IFS=',' read -ra parts <<< "$line"
 
 # 配列から各要素を取り出す
-    author="${parts[0]}"
-    title="${parts[1]}"
-    url="${parts[2]}"
+    author="${parts[1]}"
+    title="${parts[2]}"
+    url="${parts[0]}"
 
 # 各変数の値を表示
     echo "著者: $author"
@@ -18,5 +18,6 @@ for line in $(cat $1); do
     bash downloader.bash $url
     mv output.txt $title.txt
     sleep 3
+
 done
 
